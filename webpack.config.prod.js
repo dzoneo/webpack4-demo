@@ -68,6 +68,9 @@ module.exports = {
   ],
   optimization: {
     minimize: true,
+    runtimeChunk: {
+      name: 'runtime'
+    },
     splitChunks: {
       chunks: 'async',
       cacheGroups: {
